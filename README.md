@@ -1,7 +1,7 @@
 # ThetaWin
 Console applicationes for distribution functions implemented in FunktionWin (see Schrausser, 2011, 2023a, res.).
 Theta applications 
-generating distributions and estimators for several parameters q within different designs via bootstrap method. Implemented in ThetaWin (see Schrausser, 2009, 2023b, res.).
+generating distributions and estimators for several parameters q within different designs via bootstrap method. Implemented in ThetaWin (see Schrausser, 2023b).
 
 ## Binomial
 
@@ -358,7 +358,7 @@ Usage:
 
 ## References
 
-chrausser, D. G. (2011). *Handbook Distribution Functions (Verteilungsfunktionen)*. https://www.academia.edu/96844355
+Schrausser, D. G. (2011). *Handbook Distribution Functions (Verteilungsfunktionen)*. https://www.academia.edu/96844355
 
 Schrausser, D. G. (2023). *Schrausser/FunktionWin: Windows Interface for distribution functions (v1.0.0)*. Zenodo. https://doi.org/10.5281/zenodo.7651661
 
