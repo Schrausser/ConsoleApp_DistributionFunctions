@@ -8,9 +8,9 @@ generating distributions and estimators for several parameters q within differen
 Usage: 
 
      Binomial [p] [k] [n] [[1]]
-     [p] .............. probability of event A
-     [k] .............. n of events A
-     [n] ...............n of trials
+     [p] ............. probability of event A
+     [k] ............. n of events A
+     [n] ..............n of trials
      [1] ............. (1) full output
 
 ## Binomial_T
@@ -20,39 +20,39 @@ Usage:
      Binomial_T [b] [c] [[1]]
      [b] ............. cell count b
      [c] ............. cell count c
-     [1] ............ (1) full output
+     [1] ............. (1) full output
 
 ## epsilon
 
 Usage: 
 
      epsilon [mode] [Q0] [s] [n] [e|Q1] [p] [df] [[x]]
-     [mode] ...................... (1)Effect-size (2)Theta.1
-     [Q0] ..............................Theta.0
-     [s] ................................ Standard deviation
-     [n] ................................ n of cases
-     [e|Q1] .......................... Epsilon | Theta.1
-     [p] ................................ Percent-level (0.00)
-     [df] .............................. Degrees of freedom n - (.)
-     [x] ................................ Test value
+     [mode] .......... (1)Effect-size (2)Theta.1
+     [Q0] .............Theta.0
+     [s] ............. Standard deviation
+     [n] ............. n of cases
+     [e|Q1] .......... Epsilon | Theta.1
+     [p] ............. Percent-level (0.00)
+     [df] ............ Degrees of freedom n - (.)
+     [x] ............. Test value
 
 ## F_Function
 
 Usage:
  
       F_Function [mode] [x] [n1] [n2]
-      [mode] ...................... (1)Fx=p->F (2)Fy=F->p
-      [x] ................................ p-Wert/F-Wert
-      [n1] ............................. n1
-      [n2] ............................. n2
+      [mode] ......... (1)Fx=p->F (2)Fy=F->p
+      [x] ............ p-Wert/F-Wert
+      [n1] ........... n1
+      [n2] ........... n2
 
 ## Fisher_Exact
 
 Usage: 
 
       Fisher_Exact [a] [b] [c] [d] [[1]]
-      [a][b][c][d] ................. cell counts a,b,c,d
-      [1] ..............................(1) full output
+      [a][b][c][d] ... cell counts a,b,c,d
+      [1] ............ (1) full output
 
 ## Fisher_Z
 
@@ -60,44 +60,44 @@ Usage:
 
       Fisher_Z [mode] [x]
       [mode] ......... (1)r->Z (2)Z->r
-      [x] .................. r-value/Z-value
+      [x] ............ r-value/Z-value
 
 ## GAMMA_Function
 
 Usage: 
 
       GAMMA_Function [mode] [value]
-      [mode] .................. (1)F(x)->⌈ (2)F'(⌈)->x
-      [value] .................... x / ⌈
+      [mode] ......... (1)F(x)->⌈ (2)F'(⌈)->x
+      [value] ........ x / ⌈
 
 ## GAMMA
 
 Usage: 
  
       GAMMA [n] [input] [output]
-      [n] .................... n of cases
-      [input] .............. input file
-      [output] ........... output file
+      [n] ............ n of cases
+      [input] ........ input file
+      [output] ....... output file
 
 ## Geometric
 
 Usage: 
 
       Geometric [p] [r+1] [[1]]
-      [p] .................. probability of event A
-      [r+1] .............. n of trials
-      [1] .................. (1) full output
+      [p] ............ probability of event A
+      [r+1] .......... n of trials
+      [1] ............ (1) full output
 
 ## Hypergeometric
 
 Usage: 
 
       Hypergeometric [k] [n] [N] [K] [[1]]
-      [k] ................... n of events A in Sub-Population
-      [n] ................... size of Sub-Population
-      [N] ................... size of Population
-      [K] ................... n of events A in Population
-      [1] ................... (1) full output
+      [k] ............ n of events A in Sub-Population
+      [n] ............ size of Sub-Population
+      [N] ............ size of Population
+      [K] ............ n of events A in Population
+      [1] ............ (1) full output
 
 
 ## Poisson
@@ -105,46 +105,46 @@ Usage:
 Usage:
 
       Poisson [p] [k] [n] [[1]]
-      [p] .................. probability of event A
-      [k] .................. n of events A
-      [n] .................. n of trials
-      [1] ................. (1) full output
+      [p] ............ probability of event A
+      [k] ............ n of events A
+      [n] ............ n of trials
+      [1] ............ (1) full output
 
 ## t_Function
 
 Usage:
 
       t_Function [mode] [x] [n]
-      [mode] ........ (1)Fx=p->t (2)Fy=t->p
-      [x] ................ p-value/t-value
-      [n] ................ n of cases
+      [mode] ......... (1)Fx=p->t (2)Fy=t->p
+      [x] ............ p-value/t-value
+      [n] ............ n of cases
 
 ## x2_Function
 
 Usage: 
 
       x2_Function [mode] [x] [n]
-      [mode] ....... (1)Fx=p->x² (2)Fy=x²->p
-      [x] ................ p-value/x²-value
-      [n] ................ n of cases
+      [mode] ......... (1)Fx=p->x² (2)Fy=x²->p
+      [x] ............ p-value/x²-value
+      [n] ............ n of cases
 
 ## z_Dichte
 
 Usage: 
 
       z_Dichte [modus] [wert] [[f]]
-      [modus] ............. (1)fx=z->d (2)fy=d->z (3) ∫x=z->p
-                                   (4) ∫'p->z  (5) ∫'p->d  (6) ∫y=d->p
-      [wert] .................. z-Wert/z-Dichte/Prozentrang p
-      [f] ....................... (1)z-Dichte Funktionsgraph
+      [modus] ........ (1)fx=z->d (2)fy=d->z (3) ∫x=z->p
+                       (4) ∫'p->z (5) ∫'p->d (6) ∫y=d->p
+      [wert] ......... z-Wert/z-Dichte/Prozentrang p
+      [f] ............ (1)z-Dichte Funktionsgraph
 
 ## z_Function
 
 Usage: 
 
       z_Function [mode] [x]
-      [mode] ............. (1)Fx=p->z (2)Fy=z->p
-      [x] ..................... p-value/z-value
+      [mode] ......... (1)Fx=p->z (2)Fy=z->p
+      [x] ............ p-value/z-value
 
 
 ## Theta
@@ -321,15 +321,15 @@ Usage:
       [min] ............... Minimalwert
       [max] ............... Maximalwert
       [q] ................. Theta:
-                             |0|................. Harmonisches Mittel
-                             |1|................. Arithmetisches Mittel
-                             |2|................. Summe
-                             |3|................. Standardabweichung
-                             |4|................. Populationsvarianzschätzung
-                             |5|................. Produktsumme 
-                             |6|................. Geometrisches Mittel
-                             |7|................. Schrausser's d
-                             |8|................. DvarO
+                            |0|................. Harmonisches Mittel
+                            |1|................. Arithmetisches Mittel
+                            |2|................. Summe
+                            |3|................. Standardabweichung
+                            |4|................. Populationsvarianzschätzung
+                            |5|................. Produktsumme 
+                            |6|................. Geometrisches Mittel
+                            |7|................. Schrausser's d
+                            |8|................. DvarO
       [n] ................. n1 zu Theta
       [n] ................. n2 zu Theta
       [s] ................. n Subpopulationen
@@ -344,16 +344,16 @@ Usage:
        [min] ............... Minimalwert
        [max] ............... Maximalwert
        [q] ................. Theta:
-                              |1|................. Produktmoment Korrelation
-                              |2|................. Kovarianz
-                              |3|................. Determinationskoeffizient
-                              |4|................. Redundanz
-                              |5|................. Regressionskoeffizient ayx
-                              |6|................. Regressionskoeffizient byx
-                              |7|................. Regressionskoeffizient axy
-                              |8|................. Regressionskoeffizient bxy
-      [n] ................. n zu Theta
-      [s] ................. n Subpopulationen
+                             |1|................. Produktmoment Korrelation
+                             |2|................. Kovarianz
+                             |3|................. Determinationskoeffizient
+                             |4|................. Redundanz
+                             |5|................. Regressionskoeffizient ayx
+                             |6|................. Regressionskoeffizient byx
+                             |7|................. Regressionskoeffizient axy
+                             |8|................. Regressionskoeffizient bxy
+      [n] .................. n zu Theta
+      [s] .................. n Subpopulationen
 
 
 ## References
