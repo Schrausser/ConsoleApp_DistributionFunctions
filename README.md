@@ -1,4 +1,4 @@
-# ThetaWin
+# Distribution Functions
 Console applicationes for distribution functions implemented in FunktionWin (see Schrausser, 2011, 2023a, res.).
 Theta applications 
 generating distributions and estimators for several parameters q within different designs via bootstrap method. Implemented in ThetaWin (see Schrausser, 2009, 2023b, res.).
