@@ -362,6 +362,6 @@ Schrausser, D. G. (2009). *ThetaWin: Overview*. https://www.academia.edu/8180092
 
 Schrausser, D. G. (2011). *Handbook Distribution Functions (Verteilungsfunktionen)*. https://www.academia.edu/96844355
 
-Schrausser, D. G. (2023). *Schrausser/FunktionWin: Windows Interface for distribution functions (v1.0.0)*. Zenodo. https://doi.org/10.5281/zenodo.7651661
+Schrausser, D. G. (2023a). *Schrausser/FunktionWin: Windows Interface for distribution functions (v1.0.0)*. Zenodo. https://doi.org/10.5281/zenodo.7651661
 
-Schrausser, D. G. (2023). *Schrausser/ThetaWin: Distribution simulator (v1.0.0)*. Zenodo. https://doi.org/10.5281/zenodo.7659264
+Schrausser, D. G. (2023b). *Schrausser/ThetaWin: Distribution simulator (v1.0.0)*. Zenodo. https://doi.org/10.5281/zenodo.7659264
