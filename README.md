@@ -5,6 +5,8 @@ generating distributions and estimators for several parameters q within differen
 
 ## Binomial
 
+$$y = \frac{{n!}}{{k!\left( {n - k} \right)!}}p^k q^{n - k} = \left( {\begin{array}{c} n \\ k \\ \end{array}} \right)p^k q^{n - k}.$$
+
 Usage: 
 
      Binomial [p] [k] [n] [[1]]
