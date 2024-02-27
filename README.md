@@ -64,6 +64,8 @@ Usage:
 
 ## GAMMA_Function
 
+$$\Gamma \left( a \right) = \int\limits_0^\infty {x^{a - 1} } e^{ - x} dx.$$
+
 Usage: 
 
       GAMMA_Function [mode] [value]
