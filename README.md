@@ -106,6 +106,8 @@ Usage:
 
 ## Poisson
 
+$$P\left( x \right) = \frac{{e^{ - \lambda } \lambda ^x }}{{x!}}.$$
+
 Usage:
 
       Poisson [p] [k] [n] [[1]]
@@ -133,6 +135,8 @@ Usage:
       [n] ............ n of cases
 
 ## z_Dichte
+
+$$P(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^\frac{{{{ - \left( {x - \mu } \right)^2 } }}}{2\sigma^2}.$$
 
 Usage: 
 
