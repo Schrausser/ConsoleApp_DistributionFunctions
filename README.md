@@ -141,7 +141,7 @@ Usage:
 
 ## x2_Function
 
-$$F(\chi^2,df)=1-p^{\alpha 2}= \int\limits_0^{\chi^2} \frac{1}{2^{\frac{df}{2}}\mathit{\Gamma} _{(\frac{df}{2})}} (\chi^2)^{\frac{df}{2}-1} e^{-\frac{\chi^2}{2}} d\chi^2.$$
+$$F(\chi^2,df)=1-p^{\alpha 2}= \int\limits_0^{\chi^2} \frac{1}{2^{\frac{df}{2}}⋅\mathit{\Gamma} _{(\frac{df}{2})}} ⋅(\chi^2)^{\frac{df}{2}-1} ⋅\mathrm{e}^{-\frac{\chi^2}{2}} d\chi^2.$$
 
 Usage: 
 
@@ -152,7 +152,7 @@ Usage:
 
 ## z_Dichte
 
-$$f(z) =\vartheta= \frac{1}{{\sqrt {2\mathrm{\pi}} }}\mathrm{e}^{-\frac{z^2}{2}}.$$
+$$f(z) =\vartheta= \frac{1}{{\sqrt {2⋅\mathrm{\pi}} }}⋅\mathrm{e}^{-\frac{z^2}{2}}.$$
 
 Usage: 
 
