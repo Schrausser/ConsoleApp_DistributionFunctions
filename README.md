@@ -62,6 +62,8 @@ Usage:
 
 ## Fisher_Z
 
+$$Z=\frac{1}{2}log_e(\frac{1+r}{1-r}),$$
+
 Usage: 
 
       Fisher_Z [mode] [x]
