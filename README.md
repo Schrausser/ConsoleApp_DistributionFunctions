@@ -130,7 +130,7 @@ Usage:
 
 ## t_Function
 
-$$F(t,df)=p=\int\limits_{-\infty}^t\frac{\Gamma_{(\frac{df-1}{2})}}{\Gamma_{(\frac{df}{2})}}(df\pi)^{-\frac{1}{2}}.$$
+$$F(t,df)=p=\int\limits_{-\infty}^t\frac{\Gamma_{(\frac{df-1}{2})}}{\Gamma_{(\frac{df}{2})}}(df\pi)^{-\frac{1}{2}}(1-\frac{t^2}{df})^{-\frac{df-1}{2}}dt.$$
 
 Usage:
 
