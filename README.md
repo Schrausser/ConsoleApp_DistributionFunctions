@@ -17,6 +17,8 @@ Usage:
 
 ## Binomial_T
 
+$$f(X\le b|b,c)=p=\sum_{i=0}^b{\frac{(b+c)!}{i!(b+c-i)!}}2^{-i}2^{-(b+c-i)}.$$
+
 Usage: 
 
      Binomial_T [b] [c] [[1]]
