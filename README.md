@@ -114,7 +114,7 @@ Usage:
 
 ## Poisson
 
-$$P\left( x \right) = \frac{{e^{ - \lambda } \lambda ^x }}{{x!}}.$$
+$$f(X\le k|n,p)=\sum_{i=0}^k\frac{(np)^i}{e^{(np)}i!}.$$
 
 Usage:
 
