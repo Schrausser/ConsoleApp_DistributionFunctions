@@ -104,7 +104,7 @@ Usage:
 
 ## Hypergeometric
 
-$$f(X\le k|n,K,N)=\sum_{i=0}^k{\frac{}{}}.$$
+$$f(X\le k|n,K,N)=\sum_{i=0}^k{\frac{\binom{k}{i}\binom{N}{K}}{\binom{N}{n}}}.$$
 
 Usage: 
 
