@@ -28,6 +28,8 @@ Usage:
 
 ## epsilon
 
+$$\epsilon=\frac{\mu_1-\mu_0}{\hat\sigma}.$$
+
 Usage: 
 
      epsilon [mode] [Q0] [s] [n] [e|Q1] [p] [df] [[x]]
