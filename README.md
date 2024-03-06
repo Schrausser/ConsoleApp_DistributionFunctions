@@ -139,7 +139,7 @@ Usage:
 
 ## x2_Function
 
-$$F(\chi^2,df)=1-p^{\alpha 2}=.$$
+$$F(\chi^2,df)=1-p^{\alpha 2}= \int\limits_0^{\chi^2} \frac{1}{2^{\frac{df}{2}}\Gamma_{(\frac{df}{2})}}.$$
 
 Usage: 
 
