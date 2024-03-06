@@ -44,6 +44,8 @@ Usage:
 
 ## F_Function
 
+$$F(F,df_1, df_2)=1-p^{\alpha 2}= \int\limits_0^F \frac{\mathit{\Gamma} _{(\frac{df_1+df_2}{2})}}{} (\frac{}{}) F (1+\frac{}{} F) \\ dF.$$
+
 Usage:
  
       F_Function [mode] [x] [n1] [n2]
