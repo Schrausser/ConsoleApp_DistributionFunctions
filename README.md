@@ -62,9 +62,9 @@ Usage:
 
 ## Fisher_Z
 
-$$Z=\frac{1}{2}log_e(\frac{1+r}{1-r}),$$
+$$Z=\frac{1}{2}\mathrm{log_e}(\frac{1+r}{1-r}),$$
 
-$$r=\frac{e^{2Z}-1}{e^{2Z}+1}.$$
+$$r=\frac{\mathrm{e}^{2Z}-1}{\mathrm{e}^{2Z}+1}.$$
 
 Usage: 
 
@@ -74,7 +74,7 @@ Usage:
 
 ## GAMMA_Function
 
-$$f(x,t)=\Gamma = \int\limits_0^\infty {t^{x-1} } e^{-t} dt+c.$$
+$$f(x,t)=\Gamma = \int\limits_0^\infty {t^{x-1} } \mathrm{e}^{-t} dt+c.$$
 
 Usage: 
 
@@ -118,7 +118,7 @@ Usage:
 
 ## Poisson
 
-$$f(X\le k|n,p)=\sum_{i=0}^k\frac{(np)^i}{e^{(np)}i!}.$$
+$$f(X\le k|n,p)=\sum_{i=0}^k\frac{(np)^i}{\mathrm{e}^{(np)}i!}.$$
 
 Usage:
 
@@ -130,7 +130,7 @@ Usage:
 
 ## t_Function
 
-$$F(t,df)=p=\int\limits_{-\infty}^t\frac{\Gamma_{(\frac{df-1}{2})}}{\Gamma_{(\frac{df}{2})}}(df\pi)^{-\frac{1}{2}}(1+\frac{t^2}{df})^{-\frac{df-1}{2}}dt.$$
+$$F(t,df)=p=\int\limits_{-\infty}^t\frac{\Gamma_{(\frac{df-1}{2})}}{\Gamma_{(\frac{df}{2})}}(df\mathrm{\pi})^{-\frac{1}{2}}(1+\frac{t^2}{df})^{-\frac{df-1}{2}}dt.$$
 
 Usage:
 
@@ -152,7 +152,7 @@ Usage:
 
 ## z_Dichte
 
-$$f(z) =\vartheta= \frac{1}{{\sqrt {2\pi } }}e^{-\frac{z^2}{2}}.$$
+$$f(z) =\vartheta= \frac{1}{{\sqrt {2\mathrm{\pi}} }}\mathrm{e}^{-\frac{z^2}{2}}.$$
 
 Usage: 
 
