@@ -44,7 +44,7 @@ Usage:
 
 ## F_Function
 
-$$F(F,df_1, df_2)=1-p^{\alpha 2}= \int\limits_0^F \frac{\mathit{\Gamma} _{(\frac{df_1+df_2}{2})}}{\mathit{\Gamma} _{(\frac{df_1}{2})} ⋅\mathit{\Gamma} _{(\frac{df_2}{2})}} ⋅(\frac{df_1}{df_2})^{\frac{df_1}{2}} ⋅F^{\frac{df_1}{2}-1} ⋅(1+\frac{df_1}{df_2} ⋅F)^{-\frac{df_1+df_2}{2}} \\ dF.$$
+$$F(F,df_1, df_2)=1-p^{\alpha 2}= \int\limits_0^F \frac{\mathit{\Gamma} _{(\frac{df_1+df_2}{2})}}{\mathit{\Gamma} _{(\frac{df_1}{2})} ⋅\mathit{\Gamma} _{(\frac{df_2}{2})}} ⋅(\frac{df_1}{df_2})^{\frac{df_1}{2}} ⋅F^{\frac{df_1}{2}-1} ⋅(1+\frac{df_1}{df_2} ⋅F)^{-\frac{df_1+df_2}{2}} \ dF.$$
 
 Usage:
  
@@ -58,7 +58,7 @@ Usage:
 
 $$f(X=a|a,b,c,d)=P0=\frac{(a+b)!⋅(c+d)!⋅(a+c)!⋅(b+d)!}{(a+b+c+d)!⋅a!⋅b!⋅c!⋅d!},$$
 
-$$f(X\le n|a,b,c,d)=p^{exact2}=\sum\limits_{i=0}^n Pi;\\ Pi\le P0.$$
+$$f(X\le n|a,b,c,d)=p^{exact2}=\sum\limits_{i=0}^n Pi;\ Pi\le P0.$$
 
 Usage: 
 
@@ -80,7 +80,7 @@ Usage:
 
 ## GAMMA_Function
 
-$$f(x,t)=\mathit{\Gamma} = \int\limits_0^\infty {t^{x-1} } ⋅\mathrm{e}^{-t} \\ dt+c.$$
+$$f(x,t)=\mathit{\Gamma} = \int\limits_0^\infty {t^{x-1} } ⋅\mathrm{e}^{-t} \ dt+c.$$
 
 Usage: 
 
@@ -136,7 +136,7 @@ Usage:
 
 ## t_Function
 
-$$F(t,df)=p=\int\limits_{-\infty}^t\frac{\mathit{\Gamma} _{(\frac{df-1}{2})}}{\mathit{\Gamma} _{(\frac{df}{2})}}⋅(df⋅\mathrm{\pi})^{-\frac{1}{2}}⋅(1+\frac{t^2}{df})^{-\frac{df-1}{2}}dt.$$
+$$F(t,df)=p=\int\limits_{-\infty}^t\frac{\mathit{\Gamma} _{(\frac{df-1}{2})}}{\mathit{\Gamma} _{(\frac{df}{2})}}⋅(df⋅\mathrm{\pi})^{-\frac{1}{2}}⋅(1+\frac{t^2}{df})^{-\frac{df-1}{2}}\ dt.$$
 
 Usage:
 
@@ -147,7 +147,7 @@ Usage:
 
 ## x2_Function
 
-$$F(\chi^2,df)=1-p^{\alpha 2}= \int\limits_0^{\chi^2} \frac{1}{2^{\frac{df}{2}}⋅\mathit{\Gamma} _{(\frac{df}{2})}} ⋅(\chi^2)^{\frac{df}{2}-1} ⋅\mathrm{e}^{-\frac{\chi^2}{2}} d\chi^2.$$
+$$F(\chi^2,df)=1-p^{\alpha 2}= \int\limits_0^{\chi^2} \frac{1}{2^{\frac{df}{2}}⋅\mathit{\Gamma} _{(\frac{df}{2})}} ⋅(\chi^2)^{\frac{df}{2}-1} ⋅\mathrm{e}^{-\frac{\chi^2}{2}}\ d\chi^2.$$
 
 Usage: 
 
