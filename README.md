@@ -5,7 +5,7 @@ generating distributions and estimators for several parameters $\theta$ within d
 
 ## Binomial
 
-$$y = \frac{{n!}}{{k!\left( {n - k} \right)!}}p^k q^{n - k} = \left( {\begin{array}{c} n \\ k \\ \end{array}} \right)p^k q^{n - k}.$$
+$$f(X\le k|n)=\sum_{i=0}^k{\frac{n!}{i!(n-i)!}}p^iq^{(n-i)}.$$
 
 Usage: 
 
