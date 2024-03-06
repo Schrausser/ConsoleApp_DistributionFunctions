@@ -154,6 +154,8 @@ Usage:
 
 $$f(z) =\vartheta= \frac{1}{{\sqrt {2⋅\mathrm{\pi}} }}⋅\mathrm{e}^{-\frac{z^2}{2}},$$
 
+$$f^{-1}(z)=f(\vartheta)=z= ,$$
+
 $$F(z)=p=\int\limits_{-\infty}^z\vartheta \\ dz.$$
 
 Usage: 
