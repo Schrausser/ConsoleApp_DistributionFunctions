@@ -68,7 +68,7 @@ Usage:
 
 ## GAMMA_Function
 
-$$\Gamma \left( a \right) = \int\limits_0^\infty {x^{a - 1} } e^{ - x} dx.$$
+$$f(x,t)=\Gamma = \int\limits_0^\infty {t^{x-1} } e^{-t} dt+c.$$
 
 Usage: 
 
