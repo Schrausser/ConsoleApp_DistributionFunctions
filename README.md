@@ -148,7 +148,7 @@ Usage:
 
 ## z_Dichte
 
-$$f(z) =d= \frac{1}{{\sqrt {2\pi } }}e^{-\frac{z^2}{2}}.$$
+$$f(z) =\vartheta= \frac{1}{{\sqrt {2\pi } }}e^{-\frac{z^2}{2}}.$$
 
 Usage: 
 
