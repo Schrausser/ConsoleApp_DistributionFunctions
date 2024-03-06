@@ -44,7 +44,7 @@ Usage:
 
 ## F_Function
 
-$$F(F,df_1, df_2)=1-p^{\alpha 2}= \int\limits_0^F \frac{\mathit{\Gamma} _{(\frac{df_1+df_2}{2})}}{\mathit{\Gamma} _{(\frac{df_1}{2})} ⋅\mathit{\Gamma} _{(\frac{df_2}{2})}} ⋅(\frac{df_1}{df_2}) ⋅F ⋅(1+\frac{df_1}{df_2} ⋅F) \\ dF.$$
+$$F(F,df_1, df_2)=1-p^{\alpha 2}= \int\limits_0^F \frac{\mathit{\Gamma} _{(\frac{df_1+df_2}{2})}}{\mathit{\Gamma} _{(\frac{df_1}{2})} ⋅\mathit{\Gamma} _{(\frac{df_2}{2})}} ⋅(\frac{df_1}{df_2})^{\frac{df_1}{2}} ⋅F^{\frac{df_1}{2}-1} ⋅(1+\frac{df_1}{df_2} ⋅F) \\ dF.$$
 
 Usage:
  
