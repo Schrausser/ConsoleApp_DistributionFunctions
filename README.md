@@ -148,7 +148,7 @@ Usage:
 
 ## z_Dichte
 
-$$P(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^\frac{{{{ - \left( {x - \mu } \right)^2 } }}}{2\sigma^2}.$$
+$$f(z) =d= \frac{1}{{\sqrt {2\pi } }}e^{-\frac{z^2}{2}}.$$
 
 Usage: 
 
