@@ -74,7 +74,7 @@ Usage:
 
 ## GAMMA_Function
 
-$$f(x,t)=\mathit{\Gamma} = \int\limits_0^\infty {t^{x-1} } ⋅\mathrm{e}^{-t} dt+c.$$
+$$f(x,t)=\mathit{\Gamma} = \int\limits_0^\infty {t^{x-1} } ⋅\mathrm{e}^{-t} \\ dt+c.$$
 
 Usage: 
 
@@ -152,7 +152,9 @@ Usage:
 
 ## z_Dichte
 
-$$f(z) =\vartheta= \frac{1}{{\sqrt {2⋅\mathrm{\pi}} }}⋅\mathrm{e}^{-\frac{z^2}{2}}.$$
+$$f(z) =\vartheta= \frac{1}{{\sqrt {2⋅\mathrm{\pi}} }}⋅\mathrm{e}^{-\frac{z^2}{2}},$$
+
+$$F(z)=p=\int\limits_{-\infty}^z\vartheta \\ dz.$$
 
 Usage: 
 
