@@ -74,7 +74,7 @@ Usage:
 
 ## GAMMA_Function
 
-$$f(x,t)=\Gamma = \int\limits_0^\infty {t^{x-1} } \mathrm{e}^{-t} dt+c.$$
+$$f(x,t)=\mathit{\Gamma} = \int\limits_0^\infty {t^{x-1} } \mathrm{e}^{-t} dt+c.$$
 
 Usage: 
 
