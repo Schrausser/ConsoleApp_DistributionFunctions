@@ -139,6 +139,8 @@ Usage:
 
 ## x2_Function
 
+$$F(\chi^2,df)=1-p^{\alpha 2}=.$$
+
 Usage: 
 
       x2_Function [mode] [x] [n]
