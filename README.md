@@ -64,7 +64,7 @@ Usage:
 
 $$Z=\frac{1}{2}⋅\mathrm{log_e}(\frac{1+r}{1-r}),$$
 
-$$r=\frac{\mathrm{e}^{2Z}-1}{\mathrm{e}^{2Z}+1}.$$
+$$r=\frac{\mathrm{e}^{2⋅Z}-1}{\mathrm{e}^{2⋅Z}+1}.$$
 
 Usage: 
 
@@ -93,7 +93,7 @@ Usage:
 
 ## Geometric
 
-$$f(X\le r|p)=\sum_{i=0}^r{pq^i}.$$
+$$f(X\le r|p)=\sum_{i=0}^r{p⋅q^i}.$$
 
 Usage: 
 
@@ -104,7 +104,7 @@ Usage:
 
 ## Hypergeometric
 
-$$f(X\le k|n,K,N)=\sum_{i=0}^k{\frac{\binom{K}{i}\binom{N-K}{n-i}}{\binom{N}{n}}}.$$
+$$f(X\le k|n,K,N)=\sum_{i=0}^k{\frac{\binom{K}{i}⋅\binom{N-K}{n-i}}{\binom{N}{n}}}.$$
 
 Usage: 
 
@@ -118,7 +118,7 @@ Usage:
 
 ## Poisson
 
-$$f(X\le k|n,p)=\sum_{i=0}^k\frac{(np)^i}{\mathrm{e}^{(np)}i!}.$$
+$$f(X\le k|n,p)=\sum_{i=0}^k\frac{(n⋅p)^i}{\mathrm{e}^{n⋅p}⋅i!}.$$
 
 Usage:
 
@@ -130,7 +130,7 @@ Usage:
 
 ## t_Function
 
-$$F(t,df)=p=\int\limits_{-\infty}^t\frac{\mathit{\Gamma} _{(\frac{df-1}{2})}}{\mathit{\Gamma} _{(\frac{df}{2})}}(df\mathrm{\pi})^{-\frac{1}{2}}(1+\frac{t^2}{df})^{-\frac{df-1}{2}}dt.$$
+$$F(t,df)=p=\int\limits_{-\infty}^t\frac{\mathit{\Gamma} _{(\frac{df-1}{2})}}{\mathit{\Gamma} _{(\frac{df}{2})}}⋅(df⋅\mathrm{\pi})^{-\frac{1}{2}}⋅(1+\frac{t^2}{df})^{-\frac{df-1}{2}}dt.$$
 
 Usage:
 
