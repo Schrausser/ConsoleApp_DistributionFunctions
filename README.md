@@ -56,6 +56,8 @@ Usage:
 
 ## Fisher_Exact
 
+$$f(X=a|a,b,c,d)=P0=\frac{(a+b)!⋅(c+d)!⋅(a+c)!⋅(b+d)!}{(a+b+c+d)!⋅a!⋅b!⋅c!⋅d!},$$
+
 Usage: 
 
       Fisher_Exact [a] [b] [c] [d] [[1]]
