@@ -93,6 +93,8 @@ Usage:
 
 ## Geometric
 
+$$f(X\le r|p)=\sum_{i=0}^r{pq^i}.$$
+
 Usage: 
 
       Geometric [p] [r+1] [[1]]
