@@ -130,7 +130,7 @@ Usage:
 
 ## t_Function
 
-$$F(t,df)=p=\int\limits_{-\infty}^t\frac{\Gamma_{(\frac{df-1}{2})}}{\Gamma_{(\frac{df}{2})}}(df\mathrm{\pi})^{-\frac{1}{2}}(1+\frac{t^2}{df})^{-\frac{df-1}{2}}dt.$$
+$$F(t,df)=p=\int\limits_{-\infty}^t\frac{\mathit{\Gamma} _{(\frac{df-1}{2})}}{\mathit{\Gamma} _{(\frac{df}{2})}}(df\mathrm{\pi})^{-\frac{1}{2}}(1+\frac{t^2}{df})^{-\frac{df-1}{2}}dt.$$
 
 Usage:
 
@@ -141,7 +141,7 @@ Usage:
 
 ## x2_Function
 
-$$F(\chi^2,df)=1-p^{\alpha 2}= \int\limits_0^{\chi^2} \frac{1}{2^{\frac{df}{2}}\Gamma_{(\frac{df}{2})}} (\chi^2)^{\frac{df}{2}-1} e^{-\frac{\chi^2}{2}} d\chi^2.$$
+$$F(\chi^2,df)=1-p^{\alpha 2}= \int\limits_0^{\chi^2} \frac{1}{2^{\frac{df}{2}}\mathit{\Gamma} _{(\frac{df}{2})}} (\chi^2)^{\frac{df}{2}-1} e^{-\frac{\chi^2}{2}} d\chi^2.$$
 
 Usage: 
 
