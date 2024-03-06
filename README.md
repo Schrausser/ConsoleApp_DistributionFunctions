@@ -5,7 +5,7 @@ generating distributions and estimators for several parameters $\theta$ within d
 
 ## Binomial
 
-$$f(X\le k|n)=\sum_{i=0}^k{\frac{n!}{i!(n-i)!}}p^iq^{(n-i)}.$$
+$$f(X\le k|n)=\sum_{i=0}^k{\frac{n!}{i!⋅(n-i)!}}⋅p^i⋅q^{(n-i)}.$$
 
 Usage: 
 
@@ -17,7 +17,7 @@ Usage:
 
 ## Binomial_T
 
-$$f(X\le b|b,c)=p=\sum_{i=0}^b{\frac{(b+c)!}{i!(b+c-i)!}}2^{-i}2^{-(b+c-i)}.$$
+$$f(X\le b|b,c)=p=\sum_{i=0}^b{\frac{(b+c)!}{i!⋅(b+c-i)!}}⋅2^{-i}⋅2^{-(b+c-i)}.$$
 
 Usage: 
 
@@ -62,7 +62,7 @@ Usage:
 
 ## Fisher_Z
 
-$$Z=\frac{1}{2}\mathrm{log_e}(\frac{1+r}{1-r}),$$
+$$Z=\frac{1}{2}⋅\mathrm{log_e}(\frac{1+r}{1-r}),$$
 
 $$r=\frac{\mathrm{e}^{2Z}-1}{\mathrm{e}^{2Z}+1}.$$
 
@@ -74,7 +74,7 @@ Usage:
 
 ## GAMMA_Function
 
-$$f(x,t)=\mathit{\Gamma} = \int\limits_0^\infty {t^{x-1} } \mathrm{e}^{-t} dt+c.$$
+$$f(x,t)=\mathit{\Gamma} = \int\limits_0^\infty {t^{x-1} } ⋅\mathrm{e}^{-t} dt+c.$$
 
 Usage: 
 
