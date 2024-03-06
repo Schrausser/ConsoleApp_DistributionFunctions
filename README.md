@@ -64,6 +64,8 @@ Usage:
 
 $$Z=\frac{1}{2}log_e(\frac{1+r}{1-r}),$$
 
+$$r=\frac{e^{2Z}-1}{e^{2Z}+1}.$$
+
 Usage: 
 
       Fisher_Z [mode] [x]
