@@ -3,7 +3,7 @@ Console applicationes for distribution functions implemented in `FunktionWin` (s
 Theta applications 
 generating distributions and estimators for several parameters $\theta$ within different designs via *bootstrap* method, with given number of resamples $B$, where bootstrap estimator
 
-$$\hat\theta_B=B^{-1}\sum_{i=1}^B\theta^*_i.$$
+$$\hat\theta_B=B^{-1}⋅\sum_{i=1}^B\theta^*_i.$$
 
 Implemented in `ThetaWin` (see Schrausser, 2009, 2023b, res.).
 
