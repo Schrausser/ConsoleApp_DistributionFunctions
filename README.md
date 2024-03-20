@@ -1,7 +1,11 @@
 # Distribution Functions
 Console applicationes for distribution functions implemented in `FunktionWin` (see Schrausser, 2011, 2023a, res.).
 Theta applications 
-generating distributions and estimators for several parameters $\theta$ within different designs via bootstrap method. Implemented in `ThetaWin` (see Schrausser, 2009, 2023b, res.).
+generating distributions and estimators for several parameters $\theta$ within different designs via bootstrap method, with bootstrap estimator
+
+$$\hat\theta_B=B^{-1}\sum_{i=1}^B\theta^*_i,$$
+
+Implemented in `ThetaWin` (see Schrausser, 2009, 2023b, res.).
 
 ## Binomial
 
