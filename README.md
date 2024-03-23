@@ -32,7 +32,7 @@ Usage:
 
 ## epsilon
 
-$$\epsilon=\frac{\mu_1-\mu_0}{\hat\sigma}.$$
+$$\varepsilon=\frac{\mu_1-\mu_0}{\hat\sigma}.$$
 
 Usage: 
 
