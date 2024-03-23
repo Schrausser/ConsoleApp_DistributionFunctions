@@ -72,7 +72,7 @@ Usage:
 
 ## Fisher_Z
 
-$$Z=\frac{1}{2}⋅\mathrm{log_e}(\frac{1+r}{1-r}),$$
+$$Z=\frac{1}{2}⋅\mathrm{log_e}\Bigl(\frac{1+r}{1-r}\Bigr),$$
 
 $$r=\frac{\mathrm{e}^{2⋅Z}-1}{\mathrm{e}^{2⋅Z}+1}.$$
 
@@ -140,7 +140,7 @@ Usage:
 
 ## t_Function
 
-$$F(t,df)=p=\int\limits_{-\infty}^t\frac{\mathit{\Gamma} _{(\frac{df-1}{2})}}{\mathit{\Gamma} _{(\frac{df}{2})}}⋅(df⋅\mathrm{\pi})^{-\frac{1}{2}}⋅(1+\frac{t^2}{df})^{-\frac{df-1}{2}}\ dt.$$
+$$F(t,df)=p=\int\limits_{-\infty}^t\frac{\mathit{\Gamma} _{(\frac{df-1}{2})}}{\mathit{\Gamma} _{(\frac{df}{2})}}⋅(df⋅\mathrm{\pi})^{-\frac{1}{2}}⋅\Bigl(1+\frac{t^2}{df}\Bigr)^{-\frac{df-1}{2}}\ dt.$$
 
 Usage:
 
@@ -164,7 +164,7 @@ Usage:
 
 $$f(z) =\vartheta= \frac{1}{{\sqrt {2⋅\mathrm{\pi}} }}⋅\mathrm{e}^{-\frac{z^2}{2}},$$
 
-$$f^{-1}(z)=f(\vartheta)=z= \sqrt{\ln(\frac{\vartheta}{\sqrt{(2⋅ \mathrm{\pi} )^{-1}}})^{-2}},$$
+$$f^{-1}(z)=f(\vartheta)=z= \sqrt{\ln\Biggl(\frac{\vartheta}{\sqrt{(2⋅ \mathrm{\pi} )^{-1}}}\Biggr)^{-2}},$$
 
 $$F(z)=p=\int\limits_{-\infty}^z\vartheta \ dz.$$
 
