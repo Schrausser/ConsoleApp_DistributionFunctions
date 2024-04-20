@@ -1,5 +1,5 @@
 # Distribution Functions
-Console applicationes for distribution functions implemented in `FunktionWin` (see Schrausser, 2011, 2023a, res.).
+Console applicationes for distribution functions implemented in `FunktionWin` (see Schrausser, 2023a, 2024, res.).
 Theta applications 
 generating distributions and estimators for several parameters $\theta$ within different designs via *bootstrap* method, with given number of resamples $B$, where bootstrap estimator
 
