@@ -1,11 +1,11 @@
 # Distribution Functions
-Console applicationes for distribution functions implemented in `FunktionWin` (see Schrausser, 2023a, 2024, res.).
+Console applicationes for distribution functions implemented in `FunktionWin` (see Schrausser, [2023a](https://doi.org/10.5281/zenodo.7651661), [2024](https://doi.org/10.31234/osf.io/rvzxa), res.).
 Theta applications 
 generating distributions and estimators for several parameters $\theta$ within different designs via *bootstrap* method, with given number of resamples $B$, where bootstrap estimator
 
 $$\hat\theta_B=B^{-1}⋅\sum_{i=1}^B\theta^*_i.$$
 
-Implemented in `ThetaWin` (see Schrausser, 2009, 2023b, res.).
+Implemented in `ThetaWin` (see Schrausser, [2009](https://www.academia.edu/81800920), [2023b](https://doi.org/10.5281/zenodo.7659264), res.).
 
 ## Binomial
 
@@ -396,11 +396,11 @@ Usage:
 
 ## References
 
-Schrausser, D. G. (2009). *ThetaWin: Overview*. https://www.academia.edu/81800920
+Schrausser, D. G. (2009). *ThetaWin: Overview*. [https://www.academia.edu/81800920](https://www.academia.edu/81800920)
 
-———. (2023a). *Schrausser/FunktionWin: Windows Interface for distribution functions* (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.7651661
+———. (2023a). *Schrausser/FunktionWin: Windows Interface for distribution functions* (v1.0.0). Zenodo. [https://doi.org/10.5281/zenodo.7651661](https://doi.org/10.5281/zenodo.7651661)
 
-———. (2023b). *Schrausser/ThetaWin: Distribution simulator* (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.7659264
+———. (2023b). *Schrausser/ThetaWin: Distribution simulator* (v1.0.0). Zenodo. [https://doi.org/10.5281/zenodo.7659264](https://doi.org/10.5281/zenodo.7659264)
 
-———. (2024). Handbook: Distribution Functions  (Verteilungs Funktionen). PsyArXiv. https://doi.org/10.31234/osf.io/rvzxa
+———. (2024). Handbook: Distribution Functions  (Verteilungs Funktionen). PsyArXiv. [https://doi.org/10.31234/osf.io/rvzxa](https://doi.org/10.31234/osf.io/rvzxa)
 
