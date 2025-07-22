@@ -1,19 +1,31 @@
 <html> 
 <head>
 <meta charset="utf-8">
- 
-<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Author" content="Dietmar Gerald Schrausser">
+
+<title>
+ConsoleApp_DistributionFunctions/README
+</title>
 
 </head> 
-<body>
+<body style="font-family:calibri;font-size:85%;background-color:#eceff1;color:#37474f">
 
-<style></style>
+<style>
+a {color: #78909c; }
+a:visited {color: #78909c;}
+img {max-width: 50%;}
+</style>
+<title></title>
+
 <h1 id="distribution-functions">Distribution Functions</h1>
-<p>Console applicationes for distribution functions implemented in <code>FunktionWin</code> (see Schrausser, 2011, 2023a, res.).
+<p>Console applicationes for distribution functions implemented in <code>FunktionWin</code> (see Schrausser, <a href="https://doi.org/10.5281/zenodo.7651661">2023a</a>, <a href="https://doi.org/10.31234/osf.io/rvzxa">2024</a>, res.).
 Theta applications
-generating distributions and estimators for several parameters $\theta$ within different designs via bootstrap method. Implemented in <code>ThetaWin</code> (see Schrausser, 2009, 2023b, res.).</p>
+generating distributions and estimators for several parameters <math display="inline"><mi>&theta;</mi></math> within different designs via <em>bootstrap</em> method, with given number of resamples <math display="inline"><mi>B</mi></math>, where bootstrap estimator</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mrow data-mjx-texclass="ORD"><mover><mi>&theta;</mi><mo stretchy="false">^</mo></mover></mrow><mi>B</mi></msub><mo>=</mo><msup><mi>B</mi><mrow data-mjx-texclass="ORD"><mo>&minus;</mo><mn>1</mn></mrow></msup><mo>&middot;</mo><munderover><mo data-mjx-texclass="OP">&Sigma;</mo><mrow data-mjx-texclass="ORD"><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>B</mi></munderover><msubsup><mi>&theta;</mi><mi>i</mi><mo>∗</mo></msubsup><mo>.</mo></math></p>
+<p>Implemented in <code>ThetaWin</code> (see Schrausser, <a href="https://www.academia.edu/81800920">2009</a>, <a href="https://doi.org/10.5281/zenodo.7659264">2023b</a>, res.).</p>
 <h2 id="binomial">Binomial</h2>
-<p>$$f(X\le k|n)=\sum_{i=0}^k{\frac{n!}{i!⋅(n-i)!}}⋅p^i⋅q^{(n-i)}.$$</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>f</mi><mo stretchy="false">(</mo><mi>X</mi><mo>≤</mo><mi>k</mi><mrow data-mjx-texclass="ORD"><mo stretchy="false">|</mo></mrow><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><munderover><mo data-mjx-texclass="OP">&Sigma;</mo><mrow data-mjx-texclass="ORD"><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>k</mi></munderover><mrow data-mjx-texclass="ORD"><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mi>i</mi><mo>!</mo><mo>&middot;</mo><mo stretchy="false">(</mo><mi>n</mi><mo>&minus;</mo><mi>i</mi><mo stretchy="false">)</mo><mo>!</mo></mrow></mfrac></mrow><mo>&middot;</mo><msup><mi>p</mi><mi>i</mi></msup><mo>&middot;</mo><msup><mi>q</mi><mrow data-mjx-texclass="ORD"><mo stretchy="false">(</mo><mi>n</mi><mo>&minus;</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msup><mo>.</mo></math></p>
 <p>Usage:</p>
 <pre><code> Binomial [p] [k] [n] [[1]]
  [p] ............. probability of event A
@@ -22,7 +34,7 @@ generating distributions and estimators for several parameters $\theta$ within d
  [1] ............. (1) full output
 </code></pre>
 <h2 id="binomial_t">Binomial_T</h2>
-<p>$$f(X\le b|b,c)=p=\sum_{i=0}^b{\frac{(b+c)!}{i!⋅(b+c-i)!}}⋅2^{-i}⋅2^{-(b+c-i)}.$$</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>f</mi><mo stretchy="false">(</mo><mi>X</mi><mo>&lt;</mo><mi>b</mi><mrow data-mjx-texclass="ORD"><mo stretchy="false">|</mo></mrow><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo><mo>=</mo><mi>p</mi><mo>=</mo><munderover><mo data-mjx-texclass="OP">&Sigma;</mo><mrow data-mjx-texclass="ORD"><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>b</mi></munderover><mrow data-mjx-texclass="ORD"><mfrac><mrow><mo stretchy="false">(</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo stretchy="false">)</mo><mo>!</mo></mrow><mrow><mi>i</mi><mo>!</mo><mo>&middot;</mo><mo stretchy="false">(</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>&minus;</mo><mi>i</mi><mo stretchy="false">)</mo><mo>!</mo></mrow></mfrac></mrow><mo>&middot;</mo><msup><mn>2</mn><mrow data-mjx-texclass="ORD"><mo>&minus;</mo><mi>i</mi></mrow></msup><mo>&middot;</mo><msup><mn>2</mn><mrow data-mjx-texclass="ORD"><mo>&minus;</mo><mo stretchy="false">(</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>&minus;</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msup><mo>.</mo></math></p>
 <p>Usage:</p>
 <pre><code> Binomial_T [b] [c] [[1]]
  [b] ............. cell count b
@@ -30,7 +42,7 @@ generating distributions and estimators for several parameters $\theta$ within d
  [1] ............. (1) full output
 </code></pre>
 <h2 id="epsilon">epsilon</h2>
-<p>$$\epsilon=\frac{\mu_1-\mu_0}{\hat\sigma}.$$</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>&epsilon;</mi><mo>=</mo><mfrac><mrow><msub><mi>&mu;</mi><mn>1</mn></msub><mo>&minus;</mo><msub><mi>&mu;</mi><mn>0</mn></msub></mrow><mrow data-mjx-texclass="ORD"><mover><mi>&sigma;</mi><mo stretchy="false">^</mo></mover></mrow></mfrac><mo>.</mo></math></p>
 <p>Usage:</p>
 <pre><code> epsilon [mode] [Q0] [s] [n] [e|Q1] [p] [df] [[x]]
  [mode] .......... (1)Effect-size (2)Theta.1
@@ -43,7 +55,7 @@ generating distributions and estimators for several parameters $\theta$ within d
  [x] ............. Test value
 </code></pre>
 <h2 id="f_function">F_Function</h2>
-<p>$$F(F,df_1, df_2)=1-p^{\alpha 2}= \int\limits_0^F \frac{\mathit{\Gamma} _{(\frac{df_1+df_2}{2})}}{\mathit{\Gamma} _{(\frac{df_1}{2})} ⋅\mathit{\Gamma} _{(\frac{df_2}{2})}} ⋅(\frac{df_1}{df_2})^{\frac{df_1}{2}} ⋅F^{\frac{df_1}{2}-1} ⋅(1+\frac{df_1}{df_2} ⋅F)^{-\frac{df_1+df_2}{2}} \ dF.$$</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>F</mi><mo stretchy="false">(</mo><mi>F</mi><mo>,</mo><mi>d</mi><msub><mi>f</mi><mn>1</mn></msub><mo>,</mo><mi>d</mi><msub><mi>f</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>&minus;</mo><msup><mi>p</mi><mrow data-mjx-texclass="ORD"><mi>&alpha;</mi><mn>2</mn></mrow></msup><mo>=</mo><munderover><mo data-mjx-texclass="OP">&int;</mo><mn>0</mn><mi>F</mi></munderover><mfrac><msub><mrow data-mjx-texclass="ORD"><mi data-mjx-variant="-tex-mathit" mathvariant="italic">&Gamma;</mi></mrow><mrow data-mjx-texclass="ORD"><mo stretchy="false">(</mo><mfrac><mrow><mi>d</mi><msub><mi>f</mi><mn>1</mn></msub><mo>+</mo><mi>d</mi><msub><mi>f</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></msub><mrow><msub><mrow data-mjx-texclass="ORD"><mi data-mjx-variant="-tex-mathit" mathvariant="italic">&Gamma;</mi></mrow><mrow data-mjx-texclass="ORD"><mo stretchy="false">(</mo><mfrac><mrow><mi>d</mi><msub><mi>f</mi><mn>1</mn></msub></mrow><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></msub><mo>&middot;</mo><msub><mrow data-mjx-texclass="ORD"><mi data-mjx-variant="-tex-mathit" mathvariant="italic">&Gamma;</mi></mrow><mrow data-mjx-texclass="ORD"><mo stretchy="false">(</mo><mfrac><mrow><mi>d</mi><msub><mi>f</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></msub></mrow></mfrac><mo>&middot;</mo><mrow data-mjx-texclass="OPEN"><mo minsize="1.623em" maxsize="1.623em">(</mo></mrow><mfrac><mrow><mi>d</mi><msub><mi>f</mi><mn>1</mn></msub></mrow><mrow><mi>d</mi><msub><mi>f</mi><mn>2</mn></msub></mrow></mfrac><msup><mrow data-mjx-texclass="CLOSE"><mo minsize="1.623em" maxsize="1.623em">)</mo></mrow><mrow data-mjx-texclass="ORD"><mfrac><mrow><mi>d</mi><msub><mi>f</mi><mn>1</mn></msub></mrow><mn>2</mn></mfrac></mrow></msup><mo>&Gamma;</mo><msup><mi>F</mi><mrow data-mjx-texclass="ORD"><mfrac><mrow><mi>d</mi><msub><mi>f</mi><mn>1</mn></msub></mrow><mn>2</mn></mfrac><mo>&minus;</mo><mn>1</mn></mrow></msup><mo>&middot;</mo><mrow data-mjx-texclass="OPEN"><mo minsize="1.623em" maxsize="1.623em">(</mo></mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mi>d</mi><msub><mi>f</mi><mn>1</mn></msub></mrow><mrow><mi>d</mi><msub><mi>f</mi><mn>2</mn></msub></mrow></mfrac><mo>&middot;</mo><mi>F</mi><msup><mrow data-mjx-texclass="CLOSE"><mo minsize="1.623em" maxsize="1.623em">)</mo></mrow><mrow data-mjx-texclass="ORD"><mo>&minus;</mo><mfrac><mrow><mi>d</mi><msub><mi>f</mi><mn>1</mn></msub><mo>+</mo><mi>d</mi><msub><mi>f</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac></mrow></msup><mtext>&nbsp;</mtext><mi>d</mi><mi>F</mi><mo>.</mo></math></p>
 <p>Usage:</p>
 <pre><code>  F_Function [mode] [x] [n1] [n2]
   [mode] ......... (1)Fx=p-&gt;F (2)Fy=F-&gt;p
@@ -52,23 +64,23 @@ generating distributions and estimators for several parameters $\theta$ within d
   [n2] ........... n2
 </code></pre>
 <h2 id="fisher_exact">Fisher_Exact</h2>
-<p>$$f(X=a|a,b,c,d)=P0=\frac{(a+b)!⋅(c+d)!⋅(a+c)!⋅(b+d)!}{(a+b+c+d)!⋅a!⋅b!⋅c!⋅d!},$$</p>
-<p>$$f(X\le n|a,b,c,d)=p^{exact2}=\sum\limits_{i=0}^n Pi;\ Pi\le P0.$$</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>f</mi><mo stretchy="false">(</mo><mi>X</mi><mo>=</mo><mi>a</mi><mrow data-mjx-texclass="ORD"><mo stretchy="false">|</mo></mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mn>0</mn><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy="false">)</mo><mo>!</mo><mo>⋅</mo><mo stretchy="false">(</mo><mi>c</mi><mo>+</mo><mi>d</mi><mo stretchy="false">)</mo><mo>!</mo><mo>&middot;</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>c</mi><mo stretchy="false">)</mo><mo>!</mo><mo>&middot;</mo><mo stretchy="false">(</mo><mi>b</mi><mo>+</mo><mi>d</mi><mo stretchy="false">)</mo><mo>!</mo></mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>+</mo><mi>d</mi><mo stretchy="false">)</mo><mo>!</mo><mo>&middot;</mo><mi>a</mi><mo>!</mo><mo>&middot;</mo><mi>b</mi><mo>!</mo><mo>&middot;</mo><mi>c</mi><mo>!</mo><mo>&middot;</mo><mi>d</mi><mo>!</mo></mrow></mfrac><mo>,</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>f</mi><mo stretchy="false">(</mo><mi>X</mi><mo>≤</mo><mi>n</mi><mrow data-mjx-texclass="ORD"><mo stretchy="false">|</mo></mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy="false">)</mo><mo>=</mo><msup><mi>p</mi><mrow data-mjx-texclass="ORD"><mi>e</mi><mi>x</mi><mi>a</mi><mi>c</mi><mi>t</mi><mn>2</mn></mrow></msup><mo>=</mo><munderover><mo data-mjx-texclass="OP" movablelimits="false">&Sigma;</mo><mrow data-mjx-texclass="ORD"><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mi>P</mi><mi>i</mi><mo>;</mo><mtext>&nbsp;</mtext><mi>P</mi><mi>i</mi><mo>&le;</mo><mi>P</mi><mn>0.</mn></math></p>
 <p>Usage:</p>
 <pre><code>  Fisher_Exact [a] [b] [c] [d] [[1]]
   [a][b][c][d] ... cell counts a,b,c,d
   [1] ............ (1) full output
 </code></pre>
 <h2 id="fisher_z">Fisher_Z</h2>
-<p>$$Z=\frac{1}{2}⋅\mathrm{log_e}(\frac{1+r}{1-r}),$$</p>
-<p>$$r=\frac{\mathrm{e}^{2⋅Z}-1}{\mathrm{e}^{2⋅Z}+1}.$$</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>Z</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&middot;</mo><mrow data-mjx-texclass="ORD"><msub><mi data-mjx-auto-op="false">log</mi><mi mathvariant="normal">e</mi></msub></mrow><mrow data-mjx-texclass="OPEN"><mo minsize="1.623em" maxsize="1.623em">(</mo></mrow><mfrac><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mrow><mn>1</mn><mo>&minus;</mo><mi>r</mi></mrow></mfrac><mrow data-mjx-texclass="CLOSE"><mo minsize="1.623em" maxsize="1.623em">)</mo></mrow><mo>,</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>r</mi><mo>=</mo><mfrac><mrow><msup><mrow data-mjx-texclass="ORD"><mi mathvariant="normal">e</mi></mrow><mrow data-mjx-texclass="ORD"><mn>2</mn><mo>&middot;</mo><mi>Z</mi></mrow></msup><mo>&minus;</mo><mn>1</mn></mrow><mrow><msup><mrow data-mjx-texclass="ORD"><mi mathvariant="normal">e</mi></mrow><mrow data-mjx-texclass="ORD"><mn>2</mn><mo>&middot;</mo><mi>Z</mi></mrow></msup><mo>+</mo><mn>1</mn></mrow></mfrac><mo>.</mo></math></p>
 <p>Usage:</p>
 <pre><code>  Fisher_Z [mode] [x]
   [mode] ......... (1)r-&gt;Z (2)Z-&gt;r
   [x] ............ r-value/Z-value
 </code></pre>
 <h2 id="gamma_function">GAMMA_Function</h2>
-<p>$$f(x,t)=\mathit{\Gamma} = \int\limits_0^\infty {t^{x-1} } ⋅\mathrm{e}^{-t} \ dt+c.$$</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mrow data-mjx-texclass="ORD"><mi data-mjx-variant="-tex-mathit" mathvariant="italic">&Gamma;</mi></mrow><mo>=</mo><munderover><mo data-mjx-texclass="OP">&int;</mo><mn>0</mn><mi mathvariant="normal">&infin;</mi></munderover><mrow data-mjx-texclass="ORD"><msup><mi>t</mi><mrow data-mjx-texclass="ORD"><mi>x</mi><mo>&minus;</mo><mn>1</mn></mrow></msup></mrow><mo>&middot;</mo><msup><mrow data-mjx-texclass="ORD"><mi mathvariant="normal">e</mi></mrow><mrow data-mjx-texclass="ORD"><mo>&minus;</mo><mi>t</mi></mrow></msup><mtext>&nbsp;</mtext><mi>d</mi><mi>t</mi><mo>+</mo><mi>c</mi><mo>.</mo></math></p>
 <p>Usage:</p>
 <pre><code>  GAMMA_Function [mode] [value]
   [mode] ......... (1)F(x)-&gt;⌈ (2)F'(⌈)-&gt;x
@@ -82,7 +94,7 @@ generating distributions and estimators for several parameters $\theta$ within d
   [output] ....... output file
 </code></pre>
 <h2 id="geometric">Geometric</h2>
-<p>$$f(X\le r|p)=\sum_{i=0}^r{p⋅q^i}.$$</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>f</mi><mo stretchy="false">(</mo><mi>X</mi><mo>&le;</mo><mi>r</mi><mrow data-mjx-texclass="ORD"><mo stretchy="false">|</mo></mrow><mi>p</mi><mo stretchy="false">)</mo><mo>=</mo><munderover><mo data-mjx-texclass="OP">&Sigma;</mo><mrow data-mjx-texclass="ORD"><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>r</mi></munderover><mrow data-mjx-texclass="ORD"><mi>p</mi><mo>&middot;</mo><msup><mi>q</mi><mi>i</mi></msup></mrow><mo>.</mo></math></p>
 <p>Usage:</p>
 <pre><code>  Geometric [p] [r+1] [[1]]
   [p] ............ probability of event A
@@ -90,7 +102,7 @@ generating distributions and estimators for several parameters $\theta$ within d
   [1] ............ (1) full output
 </code></pre>
 <h2 id="hypergeometric">Hypergeometric</h2>
-<p>$$f(X\le k|n,K,N)=\sum_{i=0}^k{\frac{\binom{K}{i}⋅\binom{N-K}{n-i}}{\binom{N}{n}}}.$$</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>f</mi><mo stretchy="false">(</mo><mi>X</mi><mo>&le;</mo><mi>k</mi><mrow data-mjx-texclass="ORD"><mo stretchy="false">|</mo></mrow><mi>n</mi><mo>,</mo><mi>K</mi><mo>,</mo><mi>N</mi><mo stretchy="false">)</mo><mo>=</mo><munderover><mo data-mjx-texclass="OP">&Sigma;</mo><mrow data-mjx-texclass="ORD"><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>k</mi></munderover><mrow data-mjx-texclass="ORD"><mfrac><mrow><mrow data-mjx-texclass="ORD"><mrow data-mjx-texclass="OPEN"><mo minsize="1.2em" maxsize="1.2em">(</mo></mrow><mfrac linethickness="0"><mi>K</mi><mi>i</mi></mfrac><mrow data-mjx-texclass="CLOSE"><mo minsize="1.2em" maxsize="1.2em">)</mo></mrow></mrow><mo>&middot;</mo><mrow data-mjx-texclass="ORD"><mrow data-mjx-texclass="OPEN"><mo minsize="1.2em" maxsize="1.2em">(</mo></mrow><mfrac linethickness="0"><mrow><mi>N</mi><mo>&minus;</mo><mi>K</mi></mrow><mrow><mi>n</mi><mo>&minus;</mo><mi>i</mi></mrow></mfrac><mrow data-mjx-texclass="CLOSE"><mo minsize="1.2em" maxsize="1.2em">)</mo></mrow></mrow></mrow><mrow data-mjx-texclass="ORD"><mrow data-mjx-texclass="OPEN"><mo minsize="1.2em" maxsize="1.2em">(</mo></mrow><mfrac linethickness="0"><mi>N</mi><mi>n</mi></mfrac><mrow data-mjx-texclass="CLOSE"><mo minsize="1.2em" maxsize="1.2em">)</mo></mrow></mrow></mfrac></mrow><mo>.</mo></math></p>
 <p>Usage:</p>
 <pre><code>  Hypergeometric [k] [n] [N] [K] [[1]]
   [k] ............ n of events A in Sub-Population
@@ -100,7 +112,7 @@ generating distributions and estimators for several parameters $\theta$ within d
   [1] ............ (1) full output
 </code></pre>
 <h2 id="poisson">Poisson</h2>
-<p>$$f(X\le k|n,p)=\sum_{i=0}^k\frac{(n⋅p)^i}{\mathrm{e}^{n⋅p}⋅i!}.$$</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>f</mi><mo stretchy="false">(</mo><mi>X</mi><mo>≤</mo><mi>k</mi><mrow data-mjx-texclass="ORD"><mo stretchy="false">|</mo></mrow><mi>n</mi><mo>,</mo><mi>p</mi><mo stretchy="false">)</mo><mo>=</mo><munderover><mo data-mjx-texclass="OP">&Sigma;</mo><mrow data-mjx-texclass="ORD"><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>k</mi></munderover><mfrac><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>&middot;</mo><mi>p</mi><msup><mo stretchy="false">)</mo><mi>i</mi></msup></mrow><mrow><msup><mrow data-mjx-texclass="ORD"><mi mathvariant="normal">e</mi></mrow><mrow data-mjx-texclass="ORD"><mi>n</mi><mo>&middot;</mo><mi>p</mi></mrow></msup><mo>&middot;</mo><mi>i</mi><mo>!</mo></mrow></mfrac><mo>.</mo></math></p>
 <p>Usage:</p>
 <pre><code>  Poisson [p] [k] [n] [[1]]
   [p] ............ probability of event A
@@ -109,7 +121,7 @@ generating distributions and estimators for several parameters $\theta$ within d
   [1] ............ (1) full output
 </code></pre>
 <h2 id="t_function">t_Function</h2>
-<p>$$F(t,df)=p=\int\limits_{-\infty}^t\frac{\mathit{\Gamma} _{(\frac{df-1}{2})}}{\mathit{\Gamma} _{(\frac{df}{2})}}⋅(df⋅\mathrm{\pi})^{-\frac{1}{2}}⋅(1+\frac{t^2}{df})^{-\frac{df-1}{2}}dt.$$</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>F</mi><mo stretchy="false">(</mo><mi>t</mi><mo>,</mo><mi>d</mi><mi>f</mi><mo stretchy="false">)</mo><mo>=</mo><mi>p</mi><mo>=</mo><munderover><mo data-mjx-texclass="OP">&int;</mo><mrow data-mjx-texclass="ORD"><mo>−</mo><mi mathvariant="normal">&infin;</mi></mrow><mi>t</mi></munderover><mfrac><msub><mrow data-mjx-texclass="ORD"><mi data-mjx-variant="-tex-mathit" mathvariant="italic">&Gamma;</mi></mrow><mrow data-mjx-texclass="ORD"><mo stretchy="false">(</mo><mfrac><mrow><mi>d</mi><mi>f</mi><mo>&minus;</mo><mn>1</mn></mrow><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></msub><msub><mrow data-mjx-texclass="ORD"><mi data-mjx-variant="-tex-mathit" mathvariant="italic">&Gamma;</mi></mrow><mrow data-mjx-texclass="ORD"><mo stretchy="false">(</mo><mfrac><mrow><mi>d</mi><mi>f</mi></mrow><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></msub></mfrac><mo>&middot;</mo><mo stretchy="false">(</mo><mi>d</mi><mi>f</mi><mo>&middot;</mo><mrow data-mjx-texclass="ORD"><mo>&pi;</mo></mrow><msup><mo stretchy="false">)</mo><mrow data-mjx-texclass="ORD"><mo>&minus;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup><mo>⋅</mo><mrow data-mjx-texclass="OPEN"><mo minsize="1.623em" maxsize="1.623em">(</mo></mrow><mn>1</mn><mo>+</mo><mfrac><msup><mi>t</mi><mn>2</mn></msup><mrow><mi>d</mi><mi>f</mi></mrow></mfrac><msup><mrow data-mjx-texclass="CLOSE"><mo minsize="1.623em" maxsize="1.623em">)</mo></mrow><mrow data-mjx-texclass="ORD"><mo>&minus;</mo><mfrac><mrow><mi>d</mi><mi>f</mi><mo>&minus;</mo><mn>1</mn></mrow><mn>2</mn></mfrac></mrow></msup><mtext>&nbsp;</mtext><mi>d</mi><mi>t</mi><mo>.</mo></math></p>
 <p>Usage:</p>
 <pre><code>  t_Function [mode] [x] [n]
   [mode] ......... (1)Fx=p-&gt;t (2)Fy=t-&gt;p
@@ -117,7 +129,7 @@ generating distributions and estimators for several parameters $\theta$ within d
   [n] ............ n of cases
 </code></pre>
 <h2 id="x2_function">x2_Function</h2>
-<p>$$F(\chi^2,df)=1-p^{\alpha 2}= \int\limits_0^{\chi^2} \frac{1}{2^{\frac{df}{2}}⋅\mathit{\Gamma} _{(\frac{df}{2})}} ⋅(\chi^2)^{\frac{df}{2}-1} ⋅\mathrm{e}^{-\frac{\chi^2}{2}} d\chi^2.$$</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>F</mi><mo stretchy="false">(</mo><msup><mi>&chi;</mi><mn>2</mn></msup><mo>,</mo><mi>d</mi><mi>f</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>&minus;</mo><msup><mi>p</mi><mrow data-mjx-texclass="ORD"><mi>α</mi><mn>2</mn></mrow></msup><mo>=</mo><munderover><mo data-mjx-texclass="OP">&int;</mo><mn>0</mn><mrow data-mjx-texclass="ORD"><msup><mi>&chi;</mi><mn>2</mn></msup></mrow></munderover><mfrac><mn>1</mn><mrow><msup><mn>2</mn><mrow data-mjx-texclass="ORD"><mfrac><mrow><mi>d</mi><mi>f</mi></mrow><mn>2</mn></mfrac></mrow></msup><mo>⋅</mo><msub><mrow data-mjx-texclass="ORD"><mi data-mjx-variant="-tex-mathit" mathvariant="italic">&Gamma;</mi></mrow><mrow data-mjx-texclass="ORD"><mo stretchy="false">(</mo><mfrac><mrow><mi>d</mi><mi>f</mi></mrow><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></msub></mrow></mfrac><mo>&middot;</mo><mo stretchy="false">(</mo><msup><mi>&chi;</mi><mn>2</mn></msup><msup><mo stretchy="false">)</mo><mrow data-mjx-texclass="ORD"><mfrac><mrow><mi>d</mi><mi>f</mi></mrow><mn>2</mn></mfrac><mo>&minus;</mo><mn>1</mn></mrow></msup><mo>&middot;</mo><msup><mrow data-mjx-texclass="ORD"><mi mathvariant="normal">e</mi></mrow><mrow data-mjx-texclass="ORD"><mo>&minus;</mo><mfrac><msup><mi>&chi;</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow></msup><mtext>&nbsp;</mtext><mi>d</mi><msup><mi>&chi;</mi><mn>2</mn></msup><mo>.</mo></math></p>
 <p>Usage:</p>
 <pre><code>  x2_Function [mode] [x] [n]
   [mode] ......... (1)Fx=p-&gt;x² (2)Fy=x²-&gt;p
@@ -125,9 +137,9 @@ generating distributions and estimators for several parameters $\theta$ within d
   [n] ............ n of cases
 </code></pre>
 <h2 id="z_dichte">z_Dichte</h2>
-<p>$$f(z) =\vartheta= \frac{1}{{\sqrt {2⋅\mathrm{\pi}} }}⋅\mathrm{e}^{-\frac{z^2}{2}},$$</p>
-<p>$$f^{-1}(z)=f(\vartheta)=z= \sqrt{\ln(\frac{\vartheta}{\sqrt{(2⋅ \mathrm{\pi} )^{-1}}})^{-2}},$$</p>
-<p>$$F(z)=p=\int\limits_{-\infty}^z\vartheta \ dz.$$</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>f</mi><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo><mo>=</mo><mi>&vartheta;</mi><mo>=</mo><mfrac><mn>1</mn><mrow data-mjx-texclass="ORD"><msqrt><mn>2</mn><mo>&middot;</mo><mrow data-mjx-texclass="ORD"><mo>&pi;</mo></mrow></msqrt></mrow></mfrac><mo>&middot;</mo><msup><mrow data-mjx-texclass="ORD"><mi mathvariant="normal">e</mi></mrow><mrow data-mjx-texclass="ORD"><mo>&minus;</mo><mfrac><msup><mi>z</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow></msup><mo>,</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msup><mi>f</mi><mrow data-mjx-texclass="ORD"><mo>&minus;</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>&vartheta;</mi><mo stretchy="false">)</mo><mo>=</mo><mi>z</mi><mo>=</mo><msqrt><mi>ln</mi><mo data-mjx-texclass="NONE">⁡</mo><mrow data-mjx-texclass="OPEN"><mo minsize="2.470em" maxsize="2.470em">(</mo></mrow><mfrac><mi>&vartheta;</mi><msqrt><mo stretchy="false">(</mo><mn>2</mn><mo>&middot;</mo><mrow data-mjx-texclass="ORD"><mo>&pi;</mo></mrow><msup><mo stretchy="false">)</mo><mrow data-mjx-texclass="ORD"><mo>&minus;</mo><mn>1</mn></mrow></msup></msqrt></mfrac><msup><mrow data-mjx-texclass="CLOSE"><mo minsize="2.470em" maxsize="2.470em">)</mo></mrow><mrow data-mjx-texclass="ORD"><mo>&minus;</mo><mn>2</mn></mrow></msup></msqrt><mo>,</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>F</mi><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo><mo>=</mo><mi>p</mi><mo>=</mo><munderover><mo data-mjx-texclass="OP">&int;</mo><mrow data-mjx-texclass="ORD"><mo>&minus;</mo><mi mathvariant="normal">&infin;</mi></mrow><mi>z</mi></munderover><mi>&vartheta;</mi><mtext>&nbsp;</mtext><mi>d</mi><mi>z</mi><mo>.</mo></math></p>
 <p>Usage:</p>
 <pre><code>  z_Dichte [modus] [wert] [[f]]
   [modus] ........ (1)fx=z-&gt;d (2)fy=d-&gt;z (3) ∫x=z-&gt;p
@@ -333,21 +345,28 @@ generating distributions and estimators for several parameters $\theta$ within d
   [n] .................. n zu Theta
   [s] .................. n Subpopulationen
 </code></pre>
+<br>
 <h2 id="references">References</h2>
 <p>Schrausser, D. G. (2009). <em>ThetaWin: Overview</em>. <a href="https://www.academia.edu/81800920">https://www.academia.edu/81800920</a></p>
-<p>Schrausser, D. G. (2011). <em>Handbook Distribution Functions (Verteilungsfunktionen)</em>. <a href="https://www.academia.edu/96844355">https://www.academia.edu/96844355</a></p>
-<p>Schrausser, D. G. (2023a). <em>Schrausser/FunktionWin: Windows Interface for distribution functions</em> (v1.0.0). Zenodo. <a href="https://doi.org/10.5281/zenodo.7651661">https://doi.org/10.5281/zenodo.7651661</a></p>
-<p>Schrausser, D. G. (2023b). <em>Schrausser/ThetaWin: Distribution simulator</em> (v1.0.0). Zenodo. <a href="https://doi.org/10.5281/zenodo.7659264">https://doi.org/10.5281/zenodo.7659264</a></p>
-<script type="text/javascript" async
-	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-<script type="text/x-mathjax-config">
-	MathJax.Hub.Config({
-	tex2jax: {inlineMath: [['\\[','\\]'], ['\\(','\\)']]}
-	});
-</script>
+<p>———. (2023a). <em>Schrausser/FunktionWin: Windows Interface for distribution functions</em> (v1.0.0). Zenodo. <a href="https://doi.org/10.5281/zenodo.7651661">https://doi.org/10.5281/zenodo.7651661</a></p>
+<p>———. (2023b). <em>Schrausser/ThetaWin: Distribution simulator</em> (v1.0.0). Zenodo. <a href="https://doi.org/10.5281/zenodo.7659264">https://doi.org/10.5281/zenodo.7659264</a></p>
+<p>———. (2024). Handbook: Distribution Functions  (Verteilungs Funktionen). PsyArXiv. <a href="https://doi.org/10.31234/osf.io/rvzxa">https://doi.org/10.31234/osf.io/rvzxa</a></p>
 
+<hr WIDTH="75%">
+<blockquote ALIGN="CENTER">
+<center>
+<a href="https://github.com/Schrausser/ConsoleApp_DistributionFunctions">
+ConsoleApp_DistributionFunctions
+</a>
+<br><font color="#999999"><font size=-1>
+<a
+href="https://orcid.org/0000-0002-4924-8280">
+Dietmar Gerald Schrausser
+</a>
+<p>22.07.2025</p>
+</font></font>
+</center>
+</blockquote>	
 
 </body>
 </html>
-     
